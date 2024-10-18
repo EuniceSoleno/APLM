@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark_green"
+    android:padding="8dip"
+    tools:context=".ActivityB">
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_b_label"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/font_large"
+        android:textColor="@color/light_green"
+        android:paddingBottom="16dip"
+        />
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lifecycle_method_list"
+        android:textColor="@color/light_green"
+        android:textSize="@dimen/font_medium"
+        tools:layout_editor_absoluteX="-20dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="285dp">
+
+        <TextView
+            android:id="@+id/status_view_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="4dip"
+            android:textColor="@color/black"
+            android:typeface="monospace" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_status"
+        android:textColor="@color/light_green"
+        android:textSize="@dimen/font_medium"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <TextView
+        android:id="@+id/status_view_all_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="4dip"
+        android:textColor="@color/black"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <Button
+        android:id="@+id/btn_start_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startActivityA"
+        android:text="@string/btn_start_a_label"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="665dp" />
+
+    <Button
+        android:id="@+id/btn_finish_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="finishActivityB"
+        android:text="@string/btn_finish_b_label"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/btn_start_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startDialog"
+        android:text="@string/btn_start_dialog_label"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <Button
+        android:id="@+id/btn_start_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startActivityC"
+        android:text="@string/btn_start_c_label"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="596dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
